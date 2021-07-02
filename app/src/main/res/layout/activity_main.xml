@@ -25,5 +25,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="312dp"
+        android:background="@color/design_default_color_secondary"
         android:text="Click here to text to speech" />
 </RelativeLayout>
