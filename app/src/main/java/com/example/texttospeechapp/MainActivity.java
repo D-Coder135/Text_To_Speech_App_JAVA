@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         textToSpeech = new TextToSpeech(this, new OnInitListener(){
             @Override
             public void onInit(int i) {
+                textToSpeech.setLanguage(Locale.ENGLISH);
             }
         });
     }
