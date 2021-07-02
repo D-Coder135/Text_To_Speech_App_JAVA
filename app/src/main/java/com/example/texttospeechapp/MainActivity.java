@@ -2,10 +2,14 @@ package com.example.texttospeechapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.TextToSpeech.OnInitListener;
 import android.widget.Button;
 import android.widget.EditText;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     EditText editText;
@@ -18,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         button = (Button)findViewById(R.id.button);
         editText = (EditText)findViewById(R.id.editText);
+        textToSpeech = new TextToSpeech(this, new OnInitListener(){
+            @Override
+            public void onInit(int i) {
+            }
+        });
     }
 }
