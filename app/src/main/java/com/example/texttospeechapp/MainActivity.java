@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String textInEditText = editText.getText().toString();
+                textToSpeech.speak(textInEditText, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
     }
